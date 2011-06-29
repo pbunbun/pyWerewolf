@@ -348,7 +348,7 @@ class Game(object):
                 lynch_targets.append(vote)
 
         lynch_target = None
-        if len(lynch_targets) > 1:
+        if len(lynch_targets) > 1 and Options.no_tie:
             self.theme.reset()
             self._chan_message(self.theme.vote_tie_message)
             ran = random.randint(0, len(lynch_targets)-1)

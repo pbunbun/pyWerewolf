@@ -13,6 +13,9 @@ class Consts:
     good_kill_times     = 2     #number of times you can not vote before killed
     min_players         = 3     #number of players needed before a game can start
 
+class Options:
+    no_tie              = False # Tie => random lynching from most voted for.
+
 class Commands:
     game = ["join", "vote", "kill", "guard", "see", "randplayer", "leave"]
 
@@ -229,8 +232,8 @@ class Theme:
                                       "mistake..."]
     
     #message when noone is killed by lynch vote
-    vote_die_message[Role.noone] = ["Noone was voted for. The good thingies "+
-                                    "will not be happy"]
+    vote_die_message[Role.noone] = ["Villagers were unable to reach a decision, "+
+                                    "no-one gets murdered today."]
 
     ### KILL MESSAGES ###
     

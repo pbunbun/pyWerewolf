@@ -2,12 +2,12 @@
 
 # IRC config
 class irc:
-    server      = "za.shadowfire.org"
+    server      = "irc.redbrick.dcu.ie"
     port        = 6667
-    channel     = "#werewolf.dev"
+    channel     = "#werewolf-test"
     nickname    = ("pyWerewolf", "pyWerewolf_")
     password    = "werewolf"
-    admins      = ["blaq_phoenix", "shadowmaster", "defi"]
+    admins      = ["bunbun"]
 
 # Game config
 class game:

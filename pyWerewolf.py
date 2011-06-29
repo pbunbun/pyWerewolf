@@ -58,7 +58,7 @@ class WerewolfBot(SingleServerIRCBot):
         nick = nm_to_n(e.source())
         msg  = e.arguments()[0]
         if (nick == "NickServ") and \
-        (msg.startswith("This nickname is registered and protected.")):
+        (msg.startswith("This nickname is owned by someone else")):
             c.privmsg(nick, "identify %s" % config.irc.password)
             c.join(self.channel)
 
